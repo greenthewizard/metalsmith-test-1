@@ -1,14 +1,13 @@
 {
-    "source": "src",
-    "destination": "build",
-    "plugins": {
-        "metalsmith-markdown": true,
-        "metalsmith-filenames": true,
-        "metalsmith-in-place": true,
-        "metalsmith-layouts": {
-            "engine": "pug",
-            "directory": "src/pages",
-            "default": "src/layouts/article.pug"
-        }
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-filenames": true,
+    "metalsmith-markdown": true,
+    "metalsmith-in-place": true,
+    "metalsmith-layouts": {
+      "default": "article.pug",
+      "pattern": "pages/*.html"
     }
+  }
 }
